@@ -1,0 +1,102 @@
+.product-swiper {
+    display: flex;
+    column-gap: 20px;
+}
+.product-card {
+    width: 238px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;    
+    .image-main-container {
+        width: 238px;
+        height: 349px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        
+        .background-prod {
+            background-color: #0A0A0A;
+            width: 238px;
+            height: 297px;
+            position: absolute;
+            top: calc(349px - 297px); /* Positioning at the bottom portion of the container */
+            z-index: -1;
+            left: 50%;
+            transform: translateX(-50%); /* This centers the background horizontally */
+        }
+    }
+}
+.product-text {
+    h5 {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;    
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        width: 94px;
+        height: 22px;
+        margin-bottom: 21px;
+        margin-top: 20px    ;
+    }
+    span {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 7px;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+        margin-bottom: 4px;
+    }
+    p {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 7px;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        img {
+            margin-right: 11px;
+        }
+    }
+    .pric {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .price-text {
+            p {
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 6px;
+                line-height: 14.33px;
+                letter-spacing: 3%;
+                text-transform: uppercase;
+                color: #6B6969;
+            }
+            span {
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 14.33px;
+                letter-spacing: 3%;
+                text-transform: uppercase;  
+                color: #FFFFFF;
+            }
+        }
+        button {
+            width: 105px;
+            height: 25px;
+            background-color: #7A0000;
+            border: none;
+            color: #FFFFFF;
+            font-family: 'Inter';
+            font-weight: 800;
+            font-size: 8px;
+            line-height: 100%;
+            letter-spacing: 3px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

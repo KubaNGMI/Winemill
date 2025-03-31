@@ -14,14 +14,13 @@ import './Global/style.scss'
 
 
 
-
 function App() {
   return (
     <>
     <BrowserRouter>
     <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route path='home' element={<Home/>}/>
+          <Route path='' element={<Home/>}/>
           <Route path='catalog' element={<Catalog/>}/>
           <Route path='aboutus' element={<AboutUs/>}/>
           <Route path='cart' element={<Cart/>}/>
