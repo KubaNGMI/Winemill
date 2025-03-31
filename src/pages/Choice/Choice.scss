@@ -1,0 +1,106 @@
+.choice {
+    
+    .choice-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #1b1918;
+        padding-bottom:125px;
+    }
+    .choice_content {
+        display: flex;
+        border-bottom: 5px transparent solid;
+    }
+    .choice-container {
+        width: 357px;
+        height: 285px;
+    }
+    .choice-offer  {
+        background: linear-gradient(98.51deg, #331111 12.31%, #541C1C 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 945px;
+        height: 285px;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 10% 100%);
+    }
+    .text-box-choice {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+    }
+    h4{
+        color: #FFFFFF;
+        font-family: "Alex_Brush";
+        font-size: 48px;
+        font-weight: 400;   
+    }
+    h2 {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-family: "Inter";
+        font-size: 38px;
+        font-weight: 500;
+        text-align: center;
+        width: 496px;
+        height: 90px;
+        margin-bottom: 33px;
+        letter-spacing: 2px;
+    }
+    a {
+        color: #FFFFFF;
+        font-family: "Inter";
+        font-size: 11px;
+        letter-spacing: 5px;
+    }
+    .choice-text-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1165px;
+        height: 91px;
+        column-gap: 158px;
+        margin: 0 auto;
+        margin-top :50px;
+        margin-bottom: 50px;
+        .choice-p1 {
+            font-family: 'Inter';
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: white;   
+            width: 60%;
+            height: 91px;         
+        }
+        .choice-p2 {
+            font-family: 'Inter';
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: white;
+            width: 45%;
+            height: 91px;          
+        }
+    }
+}
+.viewall-choice {
+    width: 238px;
+    height: 13px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 65px;
+    margin-top: 10px;
+}
