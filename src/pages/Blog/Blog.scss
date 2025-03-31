@@ -1,0 +1,214 @@
+.hp{
+    li{
+        border-top: 2px solid black;
+        list-style: none;
+        height: 50px;
+        font-size: 26px;
+    }
+    li:last-child{
+        border-bottom: 2px solid black;
+    }
+    ul{
+        margin-top: 100px;
+        width: 150px;
+        height: 200px;
+        background: yellow;
+        overflow-y: scroll;
+        text-align: center;
+    }
+}
+.article{
+    h1{
+        color: white;
+        font-family: "Inter";
+        font-size: 28px;
+        font-weight: 700;
+        padding-top: 91px;
+        padding-bottom: 19px;
+        background: #1b1918;
+    }
+    p{
+        color: white;
+        font-family: "Inter";
+        font-size: 12px;
+        font-weight: 500;
+        width: 598px;
+    }
+}
+.cart__blog{
+    display: flex;
+    padding-top: 75px;
+    background-color: #1b1918;
+    padding-left: 45px;
+    gap: 5px;
+    h4{
+        font-family: 'Alex_Brush';
+        font-size: 37px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 45px;
+        color: white;
+        opacity: 99%;
+    }
+    h1{
+        color: white;
+        font-family: 'Inter';
+        font-size: 28px;
+        font-weight: 500;
+        padding-top: 18px;
+        text-align: center;
+        width: 563px;
+        height: 67px;
+        opacity: 99%;
+    }
+    p{
+        color: white;
+        font-family: 'Inter';
+        font-size: 11.24px;
+        padding-top: 58px;
+        text-align: center;
+        opacity: 99%;
+    }
+}
+.pink{
+    background: url(./pink.png);
+    width: 598px;
+    height: 291px;
+}
+.pink__pos{
+    width: 598px;
+    height: 291px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.green{
+    background: url(./green.png);
+    width: 598px;
+    height: 291px;
+}
+.green__pos{
+    width: 598px;
+    height: 291px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.blue{
+    background: url(./blue.png);
+    width: 598px;
+    height: 291px;
+}
+.blue__pos{
+    width: 598px;
+    height: 291px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.orange{
+    background: url(./orange.png);
+    width: 598px;
+    height: 291px;
+}
+.orange__pos{
+    width: 598px;
+    height: 291px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.h2{
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    font-family: "Inter";
+    background: #1b1918;
+    padding-top: 75px;
+    padding-left: 45px;
+}
+.conclusion{
+    display: flex;
+    gap: 5px;
+    padding-top: 125px;
+    background-color: #1b1918;
+    p{
+        font-family: "Inter";
+        font-size: 12px;
+        color: white;
+        font-weight: 200;
+    }
+    h3{
+        color: white;
+        font-family: "Inter";
+        font-size: 11px;
+        font-weight: 800;
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-bottom: 125px;
+    }
+}
+.convers2{
+    background: url(./convers.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 641px;
+    height: 180px; 
+    p{
+        color: white;
+        opacity: 99%;
+        font-family: "Inter";
+        font-size: 12px;
+    }
+    h1{
+        color: white;
+        opacity: 99%;
+        font-family: "Inter";
+        font-size: 28px;
+    }
+}
+.convers2__pos{
+    width: 641px;
+    height: 180px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.convers__p{
+    margin-top: 40px;
+    width: 486px;
+    padding-left: 40px;
+}
+.price{
+    background: url(./price.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 641px;
+    height: 180px; 
+    p{
+        color: white;
+        opacity: 99%;
+    }
+    h1{
+        color: white;
+        opacity: 99%;
+        font-family: "Inter";
+        font-size: 28px;
+    }
+}
+.price__pos{
+    width: 641px;
+    height: 180px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.price__p{
+    padding-top: 40px;
+    width: 486px;
+    padding-left: 40px;
+}
