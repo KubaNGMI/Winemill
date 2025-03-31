@@ -146,7 +146,7 @@ function Home() {
                 </form>
               </div>
               </div>
-              <div className="price">
+              <div className="price-main">
               <div className="color-box">
                 <div className="form-label">
                   <h3>Цена</h3>
@@ -185,7 +185,6 @@ function Home() {
           </div>
           <div className="sort-dropdown">
             <div className="all-drop">
-            <Radio></Radio>
               <p className='all-drop-price'>Цена</p>
               
               <p className='all-drop-maker'>Производитель a-z</p>

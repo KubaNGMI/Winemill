@@ -1,5 +1,5 @@
-main 
-{
+ 
+
     
     .swiper-top {
         background-color: #1b1918;
@@ -31,31 +31,32 @@ main
         justify-content: center;
         align-items: center;
         margin-left: 150px;
+        h4{
+            color: #FFFFFF;
+            font-family: "Alex_Brush";
+            font-size: 48px;
+            font-weight: 400;   
+        }
+        h2 {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-family: "Inter";
+            font-size: 38px;
+            font-weight: 500;
+            text-align: center;
+            width: 496px;
+            height: 90px;
+            margin-bottom: 33px;
+            letter-spacing: 2px;
+        }
+        a {
+            color: #FFFFFF;
+            font-family: "Inter";
+            font-size: 11px;
+            letter-spacing: 5px;
+        }
     }
-    h4{
-        color: #FFFFFF;
-        font-family: "Alex_Brush";
-        font-size: 48px;
-        font-weight: 400;   
-    }
-    h2 {
-        color: #FFFFFF;
-        text-transform: uppercase;
-        font-family: "Inter";
-        font-size: 38px;
-        font-weight: 500;
-        text-align: center;
-        width: 496px;
-        height: 90px;
-        margin-bottom: 33px;
-        letter-spacing: 2px;
-    }
-    a {
-        color: #FFFFFF;
-        font-family: "Inter";
-        font-size: 11px;
-        letter-spacing: 5px;
-    }
+
     
     .swiper-bot {
         display: flex;
@@ -121,8 +122,8 @@ main
         background-repeat: no-repeat;
         background-size: cover;
     }
-}
-main 
+
+ 
 .sort-filter-box {
     padding-top: 10px;
     width: 230px;
