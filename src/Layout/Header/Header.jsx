@@ -7,10 +7,12 @@ import search from './search.svg'
 function Header() {
   return (
     
-    <>
-    <title>Winemill</title>
-    <div className="container">
+    
+   
+
       <header>
+         <title>Winemill</title>
+      <div className="container">
         <div className="preheader">
           <p>ДОСТУПНА СРОЧНАЯ ДОСТАВКА ПО МОСКВЕ - <span>ДЕТАЛЬНЫЕ УСЛОВИЯ</span></p>
         </div>
@@ -20,7 +22,7 @@ function Header() {
     <input
       type="search"
       id="mySearch" />
-    <button><img src={search}/></button>
+    <button className='seacrh-btn'><img src={search}/></button>
   </div>
 </form>
       <div className="info-area">
@@ -65,9 +67,9 @@ function Header() {
             <li><a href="#">Деликатесы</a></li>
           </ul>
         </div>
+        </div>
       </header>
-    </div>
-    </>
+
   )
 }
 
