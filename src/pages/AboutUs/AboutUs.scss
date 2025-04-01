@@ -162,12 +162,13 @@ img{
             font-weight: 700;
             margin-top: 83px;
     }
+    input{
+        width: 299px;
+        height: 35px;
+        color: gray;
+    }
 }
-input{
-    width: 299px;
-    height: 35px;
-    color: gray;
-}
+
 .input-container {
     display: inline-block;
     margin-right: 10px;
@@ -270,7 +271,7 @@ input{
     }
 }
 .convers2{
-    background: url(./convers.png);
+    background: url(../AboutUs/convers2.png);
     display: flex;
     align-items: center;
     flex-direction: column;

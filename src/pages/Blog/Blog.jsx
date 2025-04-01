@@ -74,7 +74,14 @@ const Blog = () => {
             </div>
               </div>
             </div>
-            <h2 className='h2'>СМОТРЕТЬ ВСЕ</h2>
+            <div className="h2">
+            <h2 >СМОТРЕТЬ ВСЕ</h2>
+            <svg width="65" height="1" viewBox="0 0 65 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="65" y1="0.5" y2="0.5" stroke="white"/>
+</svg>
+            </div>
+            
+
           </div>
         </section>
         <section>
@@ -89,7 +96,13 @@ const Blog = () => {
               <div className="convers__p">
               <p>Благодаря рекомендациям наших опытных кавистов, вы сможете не только приобрести ту самую бутылку вина, но и узнать много нового о сочетаниях, подборе гастрономической пары, необходимости декантации, хранении и сервировке.</p>
               </div>
-              <h3>УЗНАТЬ БОЛЬШЕ</h3>
+              <div className="learn-more">
+              <h6 className="learn-moreh3">УЗНАТЬ БОЛЬШЕ</h6  >
+              <svg width="46" height="1" viewBox="0 0 46 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="46" y1="0.5" y2="0.5" stroke="white"/>
+</svg>
+
+              </div>
               </div>
               <div className="conclusion__right">
               <div className="price">

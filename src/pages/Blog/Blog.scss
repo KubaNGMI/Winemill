@@ -18,6 +18,8 @@
     }
 }
 .article{
+    background: #1b1918;
+    padding-left: 45px;
     h1{
         color: white;
         font-family: "Inter";
@@ -25,7 +27,7 @@
         font-weight: 700;
         padding-top: 91px;
         padding-bottom: 19px;
-        background: #1b1918;
+        text-transform: uppercase;
     }
     p{
         color: white;
@@ -126,6 +128,9 @@
     background: #1b1918;
     padding-top: 75px;
     padding-left: 45px;
+    display: flex;
+    align-items: center;
+    column-gap: 43px;
 }
 .conclusion{
     display: flex;
@@ -138,18 +143,10 @@
         color: white;
         font-weight: 200;
     }
-    h3{
-        color: white;
-        font-family: "Inter";
-        font-size: 11px;
-        font-weight: 800;
-        padding-top: 50px;
-        padding-left: 40px;
-        padding-bottom: 125px;
-    }
+
 }
 .convers2{
-    background: url(./convers.png);
+    background: url(../AboutUs/convers2.png);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -211,4 +208,19 @@
     padding-top: 40px;
     width: 486px;
     padding-left: 40px;
+     
+}
+.learn-more {
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+    padding-left: 45px;
+    padding-top: 50px;
+    padding-bottom: 125px;
+}
+.learn-moreh3 {
+    color: white;
+    font-family: "Inter";
+    font-size: 11px;
+    font-weight: 800;
 }
