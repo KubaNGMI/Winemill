@@ -1,0 +1,92 @@
+.conclusion{
+    display: flex;
+    gap: 5px;
+    padding-top: 125px;
+    background-color: #1b1918;
+    p{
+        font-family: "Inter";
+        font-size: 12px;
+        color: white;
+        font-weight: 200;
+    }
+
+}
+.convers2{
+    background: url(../AboutUs/convers2.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 641px;
+    height: 180px; 
+    p{
+        color: white;
+        opacity: 99%;
+        font-family: "Inter";
+        font-size: 12px;
+    }
+    h1{
+        color: white;
+        opacity: 99%;
+        font-family: "Inter";
+        font-size: 28px;
+    }
+}
+.convers2__pos{
+    width: 641px;
+    height: 180px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.convers__p{
+    margin-top: 40px;
+    width: 486px;
+    padding-left: 40px;
+}
+.price{
+    background: url(../AboutUs/price.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 641px;
+    height: 180px; 
+    p{
+        color: white;
+        opacity: 99%;
+    }
+    h1{
+        color: white;
+        opacity: 99%;
+        font-family: "Inter";
+        font-size: 28px;
+    }
+}
+.price__pos{
+    width: 641px;
+    height: 180px;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+}
+.price__p{
+    padding-top: 40px;
+    width: 486px;
+    padding-left: 40px;
+     
+}
+.learn-more {
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+    padding-left: 45px;
+    padding-top: 50px;
+    padding-bottom: 125px;
+}
+.learn-moreh3 {
+    color: white;
+    font-family: "Inter";
+    font-size: 11px;
+    font-weight: 800;
+}
