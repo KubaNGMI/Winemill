@@ -1,0 +1,40 @@
+.prod-swiper {
+    background-color: #1B1918;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 81px;
+}
+.line-text {
+    display: flex;
+    background-color: #1B1918;
+    justify-content: flex-start;
+    column-gap: 30px;
+    .order-path {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    p {
+        font-family: 'Inter';
+        font-size: 9px;
+        line-height: 16px;
+        letter-spacing: 3px;
+        color: #FFFFFF;
+        margin-right: 15px;
+    }
+}
+.learn-more-special {
+    background-color: #1B1918;
+    display: flex;
+    padding-top: 75px;
+    padding-left: 205px;
+    align-items: center;
+    column-gap: 43px;
+     p {
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-size: 11px;
+        letter-spacing: 5px;
+     }
+}
