@@ -5,18 +5,18 @@ import Wine from '../OneProd/wineformain.png';
 import Flag from '../OneProd/france-flag.png'; 
 import '../OneProd/OneProd.scss'
 
-const OneProd = ({ product }) => {
+const TwoProd = ({ product }) => {
   const dispatch = useDispatch();
   
 
   const { id, name, price, image, region, manufacturer, year, volume } = product || {
-    id: '1',
-    name: "L'ERMITE HERMITAGE",
-    price: 90000,
+    id: '2',
+    name: "LE MEALHERMITAGE",
+    price: 9000,
     image: Wine,
     region: "франция",
     manufacturer: "M.CHAPOUTIER",
-    year: "2009",
+    year: "2010",
     volume: "0.75 л"
   };
   
@@ -63,4 +63,4 @@ const OneProd = ({ product }) => {
   );
 };
 
-export default OneProd;
+export default TwoProd;

@@ -1,0 +1,114 @@
+       .swiper_content {
+        display: flex;
+        border-bottom: 5px transparent solid;
+        background-color: #1b1918;
+        padding-top: 28px;
+    }
+    .image-container {
+        width: 415px;
+        height: 285px;
+    }
+    .spacial-offer  {
+        background: linear-gradient(98.54deg, #7E0A2D 11.78%, #390213 100.28%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 989px;
+        height: 285px;
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 10% 100%);
+    }
+    .text-box-offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+        h4{
+            color: #FFFFFF;
+            font-family: "Alex_Brush";
+            font-size: 48px;
+            font-weight: 400;   
+        }
+        h2 {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-family: "Inter";
+            font-size: 38px;
+            font-weight: 500;
+            text-align: center;
+            width: 496px;
+            height: 90px;
+            margin-bottom: 33px;
+            letter-spacing: 2px;
+        }
+        a {
+            color: #FFFFFF;
+            font-family: "Inter";
+            font-size: 11px;
+            letter-spacing: 5px;
+        }
+    }
+
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+
+    display: none;
+}
+.swiper-button-next{
+    background: url(../CompSw/SwBtn.svg)center, no-repeat ;
+    rotate: (180deg);
+    width: 34px;
+    height: 34px;
+}
+.swiper-button-prev{
+    background: url(../CompSw/SwBtn.svg)center, no-repeat ;
+    rotate: (0deg);
+    width: 34px;
+    height: 34px;
+}
+
+.text-box-offer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    h4{
+        color: #FFFFFF;
+        font-family: "Alex_Brush";
+        font-size: 48px;
+        font-weight: 400;   
+    }
+    h2 {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-family: "Inter";
+        font-size: 38px;
+        font-weight: 500;
+        text-align: center;
+        width: 496px;
+        height: 90px;
+        margin-bottom: 33px;
+        letter-spacing: 2px;
+    }
+    a {
+        color: #FFFFFF;
+        font-family: "Inter";
+        font-size: 11px;
+        letter-spacing: 5px;
+    }
+}
+.spacial-offer1  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 989px;
+    height: 285px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 10% 100%);
+}

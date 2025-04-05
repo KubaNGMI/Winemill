@@ -7,20 +7,21 @@
 .preheader {
 @include flex-center
 }
+padding-top: 12px;
 p {
     color: #FFFFFF;
     font-family: "Inter";
     font-weight: 400;
     font-size: 7px;
-    letter-spacing: 45%;
-    padding-top: 7px;
-
+    letter-spacing: 3px;
 }
 span {
     color:#FFFFFF;
     font-family: "Inter";
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline;
+    font-size: 7px;
+    letter-spacing: 3px;
 
 }
 @mixin flex-center {
@@ -35,6 +36,7 @@ span {
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-left: 20px;
 }
    
     button:focus {
@@ -45,6 +47,7 @@ span {
         width: 519px;
         height: 34px;
         border: none;
+        margin-left: 37px;
     }
     input:focus {
         outline: none;
@@ -66,6 +69,7 @@ span {
         display: flex;
         justify-content:center ;
         flex-direction: column;
+        align-items: center;
         row-gap: 4px;
         column-gap: 20px;
         .user-top {
@@ -73,25 +77,29 @@ span {
             justify-content: space-between;
             column-gap: 18px;
             font-size: 9px;
-            
+            a {
+                
+                text-decoration: none;
+                color: #9b9b9b;
+                
+            }
         }
-        a {
-            text-decoration: none;
-            color: #FFFFFF;
-        }
+       
         .user-bot {
             display: flex;
             font-size: 14px;
             height: 14px;
             letter-spacing: 0%;
-            font-size: 12px
+            font-size: 12px;
         }
     }
 }
 
 
 .menu-list {
-    @include flex-center;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
     ul {
         display: flex;
         column-gap: 40px;
@@ -117,5 +125,4 @@ span {
     height: 34px;
     border: none;
     cursor: pointer;
-
 }

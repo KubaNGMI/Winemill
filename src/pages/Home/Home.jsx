@@ -1,31 +1,17 @@
 import React from 'react'
 import './Home.scss'
-import swiperimage1 from './images/swiper-image1.png'
-import Radio from '../Radio/Radio'
 import OneProd from '../OneProd/OneProd'
 import Choice from '../Choice/Choice'
+
+import CompSw from '../CompSw/CompSw'
+import Radio from '../Radio/Radio'
+
 function Home() {
   return (
     <>
       <main>
         <div className="container">
-        <section className='swiper-top'>
-          <div className="swiper_content">
-            <div className="image-container">
-              <img src={swiperimage1} alt="" />
-            </div>
-            <div className="spacial-offer">
-              <div className="text-box-offer">
-              <h4>Special offer</h4>
-              <h2>pichon longueville 
-              comtesse de lalande </h2>
-              <a href>ЗАКАЗАТЬ ВИНО</a>
-                <h1>ОСТАВИТЬ ЗАЯВКУ</h1>
-                <button>ОТПРАВИТЬ</button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CompSw></CompSw>
         <section className='swiper-bot'>
           <div className="wine-cont1">
               <p>НА ТЕРРИТОРИИ БОРДО</p>
@@ -175,7 +161,12 @@ function Home() {
           </div>
           <div className="sort-dropdown">
             <div className="all-drop">
-              <p className='all-drop-price'>Цена</p>         
+                <div className="sort-radio">
+                  <Radio></Radio>
+                  </div> 
+
+              <p className='all-drop-price'>Цена</p>
+              
               <p className='all-drop-maker'>Производитель a-z</p>
               <p className='all-drop-age'>Винтаж</p>
               <p className='all-drop-new'>Новинки</p>

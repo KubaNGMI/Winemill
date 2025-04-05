@@ -45,15 +45,11 @@
         row-gap: 5px;
     }
     .cart__blog__right  {
-        display: flex;
-        flex-direction: column;
-        row-gap: 5px;
-    }   
     display: flex;
     padding-top: 75px;
     background-color: #1b1918;
     padding-left: 45px;
-    gap: 5px;
+    column-gap: 5px;
     h4{
         font-family: 'Alex_Brush';
         font-size: 37px;
