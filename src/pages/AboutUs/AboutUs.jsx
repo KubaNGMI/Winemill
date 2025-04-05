@@ -126,7 +126,7 @@ function AboutUs() {
   </div>
 
   <div class="input-container">
-    <label for><p>ТЕЛЕФОН</p></label>
+    <label htmlFor="#"><p>ТЕЛЕФОН</p></label>
     <input type="text"/>
   </div>
 </form>

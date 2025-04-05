@@ -20,10 +20,10 @@
             width: 238px;
             height: 297px;
             position: absolute;
-            top: calc(349px - 297px); /* Positioning at the bottom portion of the container */
+            top: calc(349px - 297px);
             z-index: -1;
             left: 50%;
-            transform: translateX(-50%); /* This centers the background horizontally */
+            transform: translateX(-50%); 
         }
     }
 }

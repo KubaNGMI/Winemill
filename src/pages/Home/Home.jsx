@@ -4,13 +4,11 @@ import swiperimage1 from './images/swiper-image1.png'
 import Radio from '../Radio/Radio'
 import OneProd from '../OneProd/OneProd'
 import Choice from '../Choice/Choice'
-
 function Home() {
   return (
     <>
       <main>
         <div className="container">
- 
         <section className='swiper-top'>
           <div className="swiper_content">
             <div className="image-container">
@@ -21,9 +19,10 @@ function Home() {
               <h4>Special offer</h4>
               <h2>pichon longueville 
               comtesse de lalande </h2>
-              <a href="#">ЗАКАЗАТЬ ВИНО</a>
+              <a href>ЗАКАЗАТЬ ВИНО</a>
+                <h1>ОСТАВИТЬ ЗАЯВКУ</h1>
+                <button>ОТПРАВИТЬ</button>
               </div>
-              
             </div>
           </div>
         </section>
@@ -96,25 +95,21 @@ function Home() {
                   <div className='in-filter-row'>
                   <div className="in-filter">
                       <input type='checkbox' id='desert' name='sweetness' />
-                      <label htmlFor="Desert">Десертное</label>
-                      
+                      <label htmlFor="Desert">Десертное</label>                  
                   </div>
                   <span>21</span>
                   </div>
                   <div className='in-filter-row'>
                     <div className="in-filter">
                       <input type='checkbox' id='fortified' name='sweetness' />
-                      <label htmlFor="Fortified">Крепленное</label>
-                      
+                      <label htmlFor="Fortified">Крепленное</label>                      
                     </div>
                     <span>13</span>
                   </div>
                   <div className='in-filter-row'>
                   <div className="in-filter">
-
                       <input type='checkbox' id='nondosage' name='sweetness' />
-                      <label htmlFor="Nondosage">Нон-Дозаж</label>
-                      
+                      <label htmlFor="Nondosage">Нон-Дозаж</label>                    
                       </div>
                       <span>9</span>
                   </div>
@@ -122,24 +117,20 @@ function Home() {
                   <div className="in-filter">
                       <input type='checkbox' id='semisweet' name='sweetness' />
                       <label htmlFor="Semisweet">Полусладкое</label>
-                      
                       </div>
                       <span>9</span>
                   </div>
-
                   <div className='in-filter-row'>
                   <div className="in-filter">
                       <input type='checkbox' id='semidry' name='sweetness' />
-                      <label htmlFor="Semidry">Полусухок</label>
-                      
+                      <label htmlFor="Semidry">Полусухок</label>                    
                       </div>
                       <span>21</span>
                   </div>
                   <div className='in-filter-row'>
                   <div className="in-filter">
                       <input type='checkbox' id='Dry' name='sweetness' />
-                      <label htmlFor="dry">Нон-Дозаж</label>
-                      
+                      <label htmlFor="dry">Нон-Дозаж</label>    
                       </div>
                       <span>13</span>
                   </div>
@@ -181,21 +172,14 @@ function Home() {
                   <button>+</button>
                 </div>
               </div>
-
           </div>
           <div className="sort-dropdown">
             <div className="all-drop">
-              <p className='all-drop-price'>Цена</p>
-              
+              <p className='all-drop-price'>Цена</p>         
               <p className='all-drop-maker'>Производитель a-z</p>
-              
-
               <p className='all-drop-age'>Винтаж</p>
-              
-
               <p className='all-drop-new'>Новинки</p>
               <p className='all-drop-pop'>Популярные</p>
-
             </div>
             <div className="main-prod-handle">
             <OneProd></OneProd>
@@ -214,10 +198,8 @@ function Home() {
             </button>
             </div>
           </div>
-
         </section>
         <Choice></Choice>
-
         </div>
       </main>
     </>
