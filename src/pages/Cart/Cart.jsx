@@ -6,7 +6,7 @@ import {
   increaseQuantity, 
   decreaseQuantity 
 } from '../../pages/Cart/cartSlice';
-import Flag from '../../pages/OneProd/france-flag.png'; // Make sure to use the correct path
+import Flag from '../../pages/OneProd/france-flag.png'; 
 import CompSwProd from '../CompSwProd/CompSwProd'
 import SpecialCon from '../SpecialCon/SpecialCon'
 import './Cart.scss';
