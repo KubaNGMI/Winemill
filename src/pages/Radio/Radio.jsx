@@ -32,7 +32,7 @@ const Radio = () => {
                   
                 </span>
                 <span>
-                  Light
+                  Популярные
                 </span>
               </label>
             </li>

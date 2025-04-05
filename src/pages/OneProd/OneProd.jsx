@@ -4,7 +4,6 @@ import { addToCart } from '../Cart/cartSlice';
 import Wine from '../OneProd/wineformain.png';
 import Flag from '../OneProd/france-flag.png'; 
 import '../OneProd/OneProd.scss'
-import { Link } from 'react-router-dom';
 
 
 const OneProd = ({ product }) => {
