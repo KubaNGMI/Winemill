@@ -5,8 +5,11 @@ import logo from '../Header/rus-logo.svg'
 import search from '../Header/search.svg'
 import '../Header/Header.scss'
 
+
 const Header = () => {
-  const { totalQuantity = 0, totalAmount = 0 } = useSelector((state) => state.cart || {});
+  const cartItems = useSelector((state) => state.cart.items);
+  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const { totalAmount = 0 } = useSelector((state) => state.cart || {});
   
   const formattedTotalAmount = totalAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   
