@@ -33,7 +33,6 @@ const TwoProd = ({ product }) => {
     }));
   };
   
-  // Format price with spaces for thousands
   const formattedPrice = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   
   return (
