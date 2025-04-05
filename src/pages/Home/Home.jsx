@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.scss'
 import OneProd from '../OneProd/OneProd'
 import Choice from '../Choice/Choice'
+
 import CompSw from '../CompSw/CompSw'
 import Radio from '../Radio/Radio'
 
@@ -11,7 +12,6 @@ function Home() {
       <main>
         <div className="container">
         <CompSw></CompSw>
-
         <section className='swiper-bot'>
           <div className="wine-cont1">
               <p>НА ТЕРРИТОРИИ БОРДО</p>
@@ -81,25 +81,21 @@ function Home() {
                   <div className='in-filter-row'>
                   <div className="in-filter">
                       <input type='checkbox' id='desert' name='sweetness' />
-                      <label htmlFor="Desert">Десертное</label>
-                      
+                      <label htmlFor="Desert">Десертное</label>                  
                   </div>
                   <span>21</span>
                   </div>
                   <div className='in-filter-row'>
                     <div className="in-filter">
                       <input type='checkbox' id='fortified' name='sweetness' />
-                      <label htmlFor="Fortified">Крепленное</label>
-                      
+                      <label htmlFor="Fortified">Крепленное</label>                      
                     </div>
                     <span>13</span>
                   </div>
                   <div className='in-filter-row'>
                   <div className="in-filter">
-
                       <input type='checkbox' id='nondosage' name='sweetness' />
-                      <label htmlFor="Nondosage">Нон-Дозаж</label>
-                      
+                      <label htmlFor="Nondosage">Нон-Дозаж</label>                    
                       </div>
                       <span>9</span>
                   </div>
@@ -107,24 +103,20 @@ function Home() {
                   <div className="in-filter">
                       <input type='checkbox' id='semisweet' name='sweetness' />
                       <label htmlFor="Semisweet">Полусладкое</label>
-                      
                       </div>
                       <span>9</span>
                   </div>
-
                   <div className='in-filter-row'>
                   <div className="in-filter">
                       <input type='checkbox' id='semidry' name='sweetness' />
-                      <label htmlFor="Semidry">Полусухок</label>
-                      
+                      <label htmlFor="Semidry">Полусухок</label>                    
                       </div>
                       <span>21</span>
                   </div>
                   <div className='in-filter-row'>
                   <div className="in-filter">
                       <input type='checkbox' id='Dry' name='sweetness' />
-                      <label htmlFor="dry">Нон-Дозаж</label>
-                      
+                      <label htmlFor="dry">Нон-Дозаж</label>    
                       </div>
                       <span>13</span>
                   </div>
@@ -166,7 +158,6 @@ function Home() {
                   <button>+</button>
                 </div>
               </div>
-
           </div>
           <div className="sort-dropdown">
             <div className="all-drop">
@@ -177,14 +168,9 @@ function Home() {
               <p className='all-drop-price'>Цена</p>
               
               <p className='all-drop-maker'>Производитель a-z</p>
-              
-
               <p className='all-drop-age'>Винтаж</p>
-              
-
               <p className='all-drop-new'>Новинки</p>
               <p className='all-drop-pop'>Популярные</p>
-
             </div>
             <div className="main-prod-handle">
             <OneProd></OneProd>
@@ -203,10 +189,8 @@ function Home() {
             </button>
             </div>
           </div>
-
         </section>
         <Choice></Choice>
-
         </div>
       </main>
     </>

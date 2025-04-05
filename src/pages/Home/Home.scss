@@ -296,3 +296,26 @@ outline: none;
     align-items: center;
     justify-content: space-between;
 }
+.popup{
+    background: red;
+    width: 100%;
+    height: 1000px;
+    padding-top: 250px;
+}
+.popup__bg{
+    width: 432px;
+    height: 536px;
+    background:black;
+    margin-left: 420px;
+    padding-left: 90px;
+    h1{
+        color: white;
+        padding-top: 70px;
+        font-size: 14px;
+        padding-bottom: 40px;
+    }
+}
+input{
+        width: 250px;
+        height: 25px;   
+}

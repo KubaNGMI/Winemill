@@ -1,11 +1,27 @@
 import React from 'react'
+import '../Popup/Popus.scss'
+import { useState } from 'react'
+function Popup() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-function popup() {
+  const openPopup = () => setIsPopupOpen(true)
+  const closePopup = () => setIsPopupOpen(false)
+
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <button onClick={openPopup}>open</button>  
+
+      <Popup 
+        isOpen={isPopupOpen} 
+        onClose={closePopup}
+      >
+        <div className="popup">
+          <div className="popup__content">  
+          </div>
+        </div>
+      </Popup>
+    </>
+  );
 }
 
-export default popup
+export default Popup
