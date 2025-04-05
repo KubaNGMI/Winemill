@@ -36,7 +36,7 @@ const Header = () => {
       <div className="info-area">
         <div className="user-box">
           <div className="user-top">
-            <a href="#">Регистрация</a>
+            <Link to = '../register'>Регистрация</Link>
             <a href="#">Вход</a>
           </div>
           <div className="user-bot">

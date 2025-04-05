@@ -144,7 +144,6 @@ const Cart = () => {
         </div>
         
       </div>
-      <h3 className='also-like'>ВАМ ТАКЖЕ ПОНРАВИТСЯ...</h3>
 
     </div>
     <CompSwProd></CompSwProd>

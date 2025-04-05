@@ -3,21 +3,22 @@ import { useDispatch } from 'react-redux';
 import { addToCart } from '../Cart/cartSlice';
 import Wine from '../OneProd/wineformain.png';
 import Flag from '../OneProd/france-flag.png'; 
+import Wine1 from '../Prodcut page/bottle.png'
 import '../OneProd/OneProd.scss'
 import { Link } from 'react-router-dom';
 
 
-const OneProd = ({ product }) => {
+const TwoProd = ({ product }) => {
   const dispatch = useDispatch();
   
 
   const { id, name, price, image, region, manufacturer, year, volume } = product || {
-    id: '1',
-    name: "L'ERMITE HERMITAGE",
+    id: '3',
+    name: "CHATEAUHAUT-BRION",
     price: 90000,
-    image: Wine,
+    image: Wine1,
     region: "франция",
-    manufacturer: "M.CHAPOUTIER",
+    manufacturer: "HAUT-BRION",
     year: "2009",
     volume: "0.75 л"
   };
@@ -39,13 +40,15 @@ const OneProd = ({ product }) => {
   const formattedPrice = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   
   return (
-
+    <>
     <div className="product-swiper">
       <div className="product-card">
         <div className="image-main-container">
           <img src={image || Wine} alt={name} />
-          <div className="background-prod"></div>
-        </div>
+          <Link to={`/product`} className="background-prod">
+          </Link>
+          </div>
+        
         <div className="product-text">
           <h5>{name}</h5>
           <span>{year}/{volume}</span>
@@ -63,8 +66,8 @@ const OneProd = ({ product }) => {
         </div>
       </div>
     </div>
-    
+    </>
   );
 };
 
-export default OneProd;
+export default TwoProd;

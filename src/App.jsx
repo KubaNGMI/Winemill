@@ -9,7 +9,9 @@ import NotFound from './pages/NotFound/NotFound'
 import Product from './pages/Prodcut page/Product'
 import Blog from './pages/Blog/Blog'
 import Cart from './pages/Cart/Cart'
+import Register from './pages/Register/Register'
 import './Global/style.scss'
+
 
 
 
@@ -26,6 +28,7 @@ function App() {
           <Route path='cart' element={<Cart/>}/>
           <Route path='product' element={<Product/>}/>
           <Route path='*' element={<NotFound/>}/>
+          <Route path='register' element={<Register/>}/>
           <Route path='blog' element={<Blog/>}/>
         </Route>
       </Routes>

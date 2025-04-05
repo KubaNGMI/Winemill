@@ -1,6 +1,6 @@
-
 import { createSlice } from '@reduxjs/toolkit';
 
+// Load cart from localStorage if available
 const loadCartFromStorage = () => {
   try {
     const savedCart = localStorage.getItem('cart');
@@ -25,22 +25,33 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      const { id } = action.payload;
-      const existingItem = state.items.find(item => item.id === id);
+      const newItem = action.payload;
+      const existingItemIndex = state.items.findIndex(item => item.id === newItem.id);
       
-      if (existingItem) {
-        existingItem.quantity += 1;
+      if (existingItemIndex !== -1) {
+        // If item already exists, increase quantity
+        const existingItem = state.items[existingItemIndex];
+        const quantityToAdd = newItem.quantity || 1;
+        
+        // Update existing item
+        existingItem.quantity += quantityToAdd;
         existingItem.totalPrice = existingItem.price * existingItem.quantity;
       } else {
-        state.items.push({
-          ...action.payload,
-          quantity: 1,
-          totalPrice: action.payload.price
-        });
+        // Ensure quantity and totalPrice are set properly
+        const itemToAdd = {
+          ...newItem,
+          quantity: newItem.quantity || 1,
+          totalPrice: newItem.price * (newItem.quantity || 1)
+        };
+        
+        // Add new item to cart
+        state.items.push(itemToAdd);
       }
       
+      // Recalculate total amount
       state.totalAmount = state.items.reduce((sum, item) => sum + item.totalPrice, 0);
       
+      // Save to localStorage
       localStorage.setItem('cart', JSON.stringify(state));
     },
     
@@ -49,6 +60,7 @@ const cartSlice = createSlice({
       state.items = state.items.filter(item => item.id !== id);
       state.totalAmount = state.items.reduce((sum, item) => sum + item.totalPrice, 0);
       
+      // Save to localStorage
       localStorage.setItem('cart', JSON.stringify(state));
     },
     
@@ -61,6 +73,7 @@ const cartSlice = createSlice({
         item.totalPrice = item.price * item.quantity;
         state.totalAmount = state.items.reduce((sum, item) => sum + item.totalPrice, 0);
         
+        // Save to localStorage
         localStorage.setItem('cart', JSON.stringify(state));
       }
     },
@@ -74,11 +87,14 @@ const cartSlice = createSlice({
         item.totalPrice = item.price * item.quantity;
         state.totalAmount = state.items.reduce((sum, item) => sum + item.totalPrice, 0);
         
+        // Save to localStorage
         localStorage.setItem('cart', JSON.stringify(state));
       } else if (item && item.quantity === 1) {
+        // If quantity would be 0, remove the item
         state.items = state.items.filter(item => item.id !== id);
         state.totalAmount = state.items.reduce((sum, item) => sum + item.totalPrice, 0);
         
+        // Save to localStorage
         localStorage.setItem('cart', JSON.stringify(state));
       }
     },
@@ -87,6 +103,7 @@ const cartSlice = createSlice({
       state.items = [];
       state.totalAmount = 0;
       
+      // Save to localStorage
       localStorage.setItem('cart', JSON.stringify(state));
     }
   }
